@@ -1,0 +1,87 @@
+body {
+    background: #ffdde1;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ff4e50;
+    padding: 20px;
+    position: relative;
+}
+.swiper {
+    width: 50%;
+    height: 900px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.swiper-slide img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.back {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    background: #ff4e50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.back:hover {
+    background: #fc913a;
+    transform: scale(1.1);
+}
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 2em;
+    animation: floatUp 3s linear forwards;
+}
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(2);
+        opacity: 0;
+    }
+}
+.love-button {
+    display: block;
+    margin: 20px auto;
+    background: #ff4e50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.love-button:hover {
+    transform: scale(1.1);
+}
+
+@media (width <= 500px) {
+    .swiper {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .titulo_pag2 {
+        font-size: 1.5em;
+    }
+}
